@@ -23,8 +23,8 @@ correct_answers_index = [1, 2, 0, 3, 1]
 
 user_score = 0
 
-#Se crea una lista con las preguntas aleatorias
-questions_to_ask = random.choices(list(zip(questions,
+#Se crea una lista con las preguntas aleatorias sin repetir
+questions_to_ask = random.sample(list(zip(questions,
 answers, correct_answers_index)), k=3)
 
 # El usuario deberá contestar 3 preguntas
